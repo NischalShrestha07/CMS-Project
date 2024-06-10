@@ -6,6 +6,8 @@ const Home = () => {
         <div>
             {/* use of components Navbar */}
             <Navbar />
+
+
         </div>
 
     )
