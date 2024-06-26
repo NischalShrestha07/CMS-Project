@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import './Home.css'
 import Navbar from '../../components/Navbar'
 import axios from 'axios'
@@ -8,7 +8,9 @@ const Home = () => {
         console.log(responce);
     }
 
-
+    useEffect(() => {
+        fetchBlogs()
+    }, [])
 
     return (
         <div>
